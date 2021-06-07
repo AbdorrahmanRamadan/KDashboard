@@ -1,0 +1,329 @@
+@import "statistics";
+.koala-lists{
+  width: $mainListsWidth;
+  background-color: $listsBackgroundColor;
+  font-family: $mainFontFamily;
+  border-radius: $mainBorderRadius;
+  box-sizing: border-box;
+  box-shadow: $boxShadow;
+  .koala-lists-header{
+    box-sizing: border-box;
+    padding: $mainPadding $mainPadding $mainPadding $mainPadding+5;
+    border-bottom: 1px solid $borderColor;
+    color: $blackColor;
+  }
+  .koala-lists-body{
+    margin: $mainMargin 0 0 0;
+    .list-item{
+      padding: $mainPadding + 5;
+      display: flex;
+      flex-direction: row;
+      .list-item-image{
+        width: 20%;
+        height: 100%;
+        .item-image{
+          width: 68px;
+          height: 68px;
+          border-radius: 100%;
+        }
+      }
+      .list-item-info{
+        margin: $mainMargin;
+        width: 60%;
+        .list-item-name{
+          .item-name{
+            font-size: $mainFontSize + 4;
+            color: $blackColor;
+            font-weight: bold;
+          }
+        }
+        .list-item-details-status{
+          margin-top: $mainMargin;
+          font-size: $mainFontSize + 2;
+          display: flex;
+          flex-direction: row;
+          .item-details{
+            color: $grayColor;
+            .item-details-title{
+              margin-right: $mainMargin - 5;
+              align-self: flex-end;
+            }
+          }
+          .item-status{
+            font-weight: bold;
+            margin: 0 $mainMargin;
+            .status-done{
+              color: $successColor;
+            }
+            .status-waiting{
+              color: $warningColor;
+            }
+            .status-cancelled{
+              color: $dangerColor;
+            }
+          }
+        }
+      }
+      .list-item-count{
+        width: 20%;
+        margin: auto;
+        font-weight: bold;
+        color: $blackColor;
+        .item-count{
+          text-align: center;
+        }
+      }
+      &:hover{
+        background-color: $hoveredDefaultColor;
+        transition: background-color ease-in-out 0.2s;
+      }
+    }
+  }
+  .koala-lists-footer{
+    margin-bottom: $mainMargin;
+    padding: $mainPadding 0;
+    .lists-show-all-action{
+      text-align: center;
+      .show-all-action{
+        background-color: unset;
+        padding: $mainPadding - 5 $mainPadding + 5;
+        border: 2px solid $mainColor;
+        border-radius: $mainBorderRadius - 5;
+        color: $mainColor;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        &:hover, &:focus{
+          background-color: $mainColor;
+          color:#fff;
+          transition: all ease-in-out 0.3s;
+        }
+      }
+    }
+  }
+}
+.lists-bordered-items{
+  .koala-lists-header{
+    color: $mainColor;
+  }
+  .koala-lists-body{
+    padding: $mainPadding;
+    .list-item{
+      margin-bottom: $mainMargin + 5;
+      border-radius: $mainBorderRadius;
+      border: 1px solid $mainColor;
+      .list-item-count{
+        color: $mainColor;
+      }
+      &:hover{
+        background-color: $mainColor;
+        transition: all ease-in-out 0.3s;
+        .list-item-info .item-name, .list-item-details-status .item-details, .list-item-count{
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.colorized-items{
+  .koala-lists-header{
+    color: $mainColor;
+  }
+  .koala-lists-body{
+    padding: $mainPadding;
+    .list-item{
+      margin-bottom: $mainMargin + 5;
+      border-radius: $mainBorderRadius;
+      .list-item-count{
+        color: $mainColor;
+      }
+    }
+    .item-done{
+      background-color: rgba(40, 167, 69, 0.3);
+      &:hover{
+        background-color: rgba(40, 167, 69, 0.3);
+        border-left: 5px solid rgb(40, 167, 69);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+    .item-waiting{
+      background-color: rgba(255, 193, 7, 0.3);
+      &:hover{
+        background-color: rgba(255, 193, 7, 0.3);
+        border-left: 5px solid rgb(255, 193, 7);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+    .item-cancel{
+      background-color: rgba(220, 53, 69, 0.3);
+      &:hover{
+        background-color: rgba(220, 53, 69, 0.3);
+        border-left: 5px solid rgb(220, 53, 69);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+      }
+    }
+  }
+}
+.left-bordered-items{
+  .koala-lists-header{
+    color: $mainColor;
+  }
+  .koala-lists-body{
+    padding: $mainPadding;
+    .list-item{
+      margin-bottom: $mainMargin + 5;
+      box-shadow: $boxShadow;
+      background-color: #fff;
+      .list-item-count{
+        color: $mainColor;
+      }
+    }
+    .item-done{
+      border-left: 5px solid rgb(40, 167, 69);
+      &:hover{
+        background-color: #fff;
+        border: 1px solid rgb(40, 167, 69);
+        border-left: 5px solid rgb(40, 167, 69);
+      }
+    }
+    .item-waiting{
+      border-left: 5px solid rgb(255, 193, 7);
+      &:hover{
+        background-color: #fff;
+        border: 1px solid rgb(255, 193, 7);
+        border-left: 5px solid rgb(255, 193, 7);
+      }
+    }
+    .item-cancel{
+      border-left: 5px solid rgb(220, 53, 69);
+      &:hover{
+        background-color: #fff;
+        border: 1px solid rgb(220, 53, 69);
+        border-left: 5px solid rgb(220, 53, 69);
+      }
+    }
+  }
+}
+.right-bordered-items{
+  .koala-lists-header{
+    color: $mainColor;
+  }
+  .koala-lists-body{
+    padding: $mainPadding;
+    .list-item{
+      margin-bottom: $mainMargin + 5;
+      box-shadow: $boxShadow;
+      background-color: #fff;
+      border-top-left-radius: $mainBorderRadius * 3;
+      .list-item-count{
+        color: $mainColor;
+      }
+    }
+    .item-done{
+      border-right: 5px solid rgb(40, 167, 69);
+      &:hover{
+        background-color: rgba(40, 167, 69, 0.4);
+        border-right: 5px solid rgb(40, 167, 69);
+      }
+    }
+    .item-waiting{
+      border-right: 5px solid rgb(255, 193, 7);
+      &:hover{
+        background-color: rgba(255, 193, 7, 0.4);
+        border-right: 5px solid rgb(255, 193, 7);
+      }
+    }
+    .item-cancel{
+      border-right: 5px solid rgb(220, 53, 69);
+      &:hover{
+        background-color: rgba(220, 53, 69, 0.4);
+        border-right: 5px solid rgb(220, 53, 69);
+      }
+    }
+  }
+}
+.background-header-list{
+  border-radius: $mainBorderRadius;
+  .koala-lists-header{
+    border-radius: $mainBorderRadius $mainBorderRadius 0 0 ;
+    background-color: $mainColor;
+    color: #fff;
+    text-align: center;
+  }
+  .koala-lists-body{
+    .list-item{
+      .background-opacity{
+        .status-done{
+          background-color: rgba(40, 167, 69, 0.4);
+          padding: 2px 5px;
+        }
+        .status-waiting{
+          background-color: rgba(255, 193, 7, 0.4);
+          padding: 2px 5px;
+        }
+        .status-cancelled{
+          background-color: rgba(220, 53, 69, 0.4);
+          padding: 2px 5px;
+        }
+      }
+      &:hover{
+        background-color: rgba(0, 123, 255, 0.3);
+      }
+    }
+  }
+}
+.lists-stripped-items{
+  .koala-lists-body{
+    .stripped{
+      background-color: $hoveredDefaultColor;
+    }
+  }
+}
+.lists-separated-items{
+  background-color: unset;
+  box-shadow: unset;
+  .koala-lists-header{
+    border: 0;
+    padding: $mainPadding - 5 0;
+  }
+  .koala-lists-body {
+    .list-item {
+      background-color: #fff;
+      margin: $mainMargin 0;
+      &:hover{
+        background-color: #fff;
+        border: 1px solid $mainColor;
+        box-shadow: $boxShadow;
+        transition: all ease-in 0.2s;
+      }
+    }
+  }
+}
+@media only screen and (min-width:1200px){
+  .koala-lists{
+    width: $mainListsWidth;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .koala-lists{
+    width: $mediumListsWidth;
+  }
+}
+@media only screen and (min-width:768px) and (max-width: 992px){
+  .koala-lists{
+    width: $mediumListsWidth;
+  }
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+  .koala-lists{
+    width: 66.66%;;
+  }
+}
+@media only screen and (max-width:576px){
+  .koala-lists{
+    width: $smallListsWidth;
+  }
+}

@@ -1,0 +1,89 @@
+@import "calender";
+body {
+  .progress {
+    &_inner {
+      @include traverse($steps);
+      @extend %center;
+      height: 200px;
+      width: $form-width + px;
+
+      @for $i from 1 through $steps {
+        &__step:nth-of-type(#{$i}) {
+          &:before {
+            content: '';
+          }
+          &:after {
+            content: '#{$i}';
+            font-size: 22px;
+            color: $bar-base;
+            position: relative;
+            top:-120px;
+          }
+        }
+      }
+
+      &__step {
+        @extend %step;
+        &.complete{
+          &:before{
+            content:'\2713';
+            color:white;
+            background-color: $bar-bg;
+            border-color: $bar-bg;
+          }
+          &:after{
+            color: $bar-bg;
+          }
+          &>label{
+            color: $bar-bg;
+          }
+        }
+        &.next{
+          &:before{
+            background-color: $bar-base;
+          }
+        }
+      }
+
+      &__bar {
+        @extend %bar;
+        &--set {
+          @extend %bar;
+          width: 100% - $step-width;
+          top: - $bar-height;
+          background: $bar-base;
+          position: relative;
+          z-index: -2;
+        }
+      }
+
+      &__tabs {
+        & .tab {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          margin-top: $tab-spacing;
+          padding: 30px;
+          background: $color-bg;
+          border-radius: 10px;
+          border-left: 10px solid $card-color;
+          transition: all .2s;
+
+          h1 {
+            margin: 0;
+            color: $card-color;
+          }
+
+          p {
+            font-weight: 400;
+            opacity: 0.8;
+            color: black;
+          }
+        }
+      }
+      input[type="radio"] {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,278 @@
+@import "Lists";
+.calendar-events{
+  width: 30%;
+  background-color: $listsBackgroundColor;
+  padding: 10px;
+  font-family: $mainFontFamily;
+  .selected-date{
+    display: none;
+  }
+  .calendar {
+    position: relative;
+    .months_menu {
+      display: none;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      background-color: $listsBackgroundColor;
+      top:55px;
+      width: 100%;
+      height:75%;
+      button {
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        background: transparent;
+        font-family: sans-serif;
+        font-size: 16px;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 4px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          background: #eee;
+          color: $mainColor;
+        }
+
+        &:focus {
+          color: #eee;
+          background-color: $mainColor;
+        }
+      }
+      &.active{
+        display: flex;
+      }
+    }
+    .years_menu {
+      display: none;
+      flex-wrap: wrap;
+      height: 75%;
+      width: 100%;
+      margin-bottom: 20px;
+      overflow-y: scroll;
+      position: absolute;
+      background-color: $listsBackgroundColor;
+      top:55px;
+      &::-webkit-scrollbar {
+        width: 5px; /* width of the entire scrollbar */
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #bebebe;
+        border-radius: 20px; /* color of the tracking area */
+
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $mainColor;    /* color of the scroll thumb */
+        border-radius: $mainBorderRadius * 2;       /* roundness of the scroll thumb */
+        border: 1px solid #989898;  /* creates padding around scroll thumb */
+
+      }
+      button {
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        background: transparent;
+        font-family: sans-serif;
+        font-size: 16px;
+        width: 15%;
+        height: 30px;
+        border-radius: 4px;
+        margin: 10px;
+        transition-duration: 0.2s;
+
+        &:hover {
+          background: #eee;
+          color: $mainColor;
+        }
+
+        &:focus {
+          color: #eee;
+          background-color: $mainColor;
+        }
+      }
+      &.active{
+        display: flex;
+      }
+    }
+
+    &.active {
+      display: inline-grid;
+      position: absolute;
+    }
+    .date-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: 300;
+      .current-date{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .year,.mth {
+          margin: 5px;
+          cursor: pointer;
+        }
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 5px;
+        transition-duration: .2s;
+        position: relative;
+        background-color: rgba(0, 123, 255, 0.2);
+        color: #007bff;
+        padding: 3px;
+        i{
+          cursor: pointer;
+        }
+        &:hover {
+          background: $mainColor;
+          color: #eee;
+        }
+      }
+
+    }
+
+    .daysLabels {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      grid-template-columns: repeat(7, 1fr);
+      color: #999;
+      font-weight: 600;
+      margin-bottom: 15px;
+
+      span {
+        width: 50px;
+        justify-self: center;
+        align-self: center;
+        text-align: center;
+      }
+    }
+
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+
+      button {
+        cursor: pointer;
+        outline: 0;
+        border: 0;
+        background: transparent;
+        font-family: sans-serif;
+        font-size: 16px;
+        justify-self: center;
+        align-self: center;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+        margin: 3px;
+        transition-duration: .2s;
+
+        &:hover {
+          background: #eee;
+          color: $mainColor;
+        }
+
+        &.day.selected {
+          box-shadow: inset 0 0 0 2px;
+          background-color: $mainColor;
+          color: #fff;
+        }
+      }
+    }
+
+    footer {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 18px;
+      #today {
+        cursor: pointer;
+        background-color: $mainColor;
+        color: #eee;
+        padding: 7px;
+        margin-top: 20px;
+        border-radius: 7px;
+        border: .1em solid #eee;
+        &:hover {
+          box-shadow: inset 0 0 0 .4px;
+        }
+      }
+
+    }
+  }
+  .events-of-date{
+    >span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 5px solid $mainColor;
+      height: 68px;
+    }
+    .event{
+      display: flex;
+      align-items: center;
+      border-left: 5px solid $mainColor;
+      padding: 0;
+      line-height: 0.5;
+      font-family: $mainFontFamily;
+      background-color:#E0E4EE;
+      margin: 10px 0;
+      .event-data{
+        width: 70%;
+        margin-left: 10px;
+        .event-name{
+          color: #007BFF;
+        }
+        .event-description{
+          color: #343A40;
+          font-size: 12px;
+        }
+      }
+      .event-time{
+        width: 30%;
+        color: #343A40;
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media only screen and (min-width:1200px){
+  .calendar-events{
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  .calendar-events{
+    width: 40%;
+  }
+}
+@media only screen and (min-width:768px) and (max-width: 992px){
+  .calendar-events{
+    width: 50%;
+  }
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+  .calendar-events{
+    width: 66.66%;;
+  }
+}
+@media only screen and (max-width:576px){
+  .calendar-events{
+    width: 100%;
+  }
+}
+

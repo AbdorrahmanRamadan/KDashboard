@@ -1,0 +1,415 @@
+$mainColor: #007BFF;
+$dangerColor: #DC3545;
+$successColor: #28A745;
+$warningColor: #FFC107;
+$blackColor: #343A40;
+$mainMargin: 10px;
+$mainPadding: 10px;
+$mainBorderRadius: 10px;
+$mainFontFamily:Arial;
+$mainFontSize:10px;
+$mainListsWidth: 33.333%;
+$listsBackgroundColor:#fff;
+$borderColor:#BBBBBB;
+$grayColor:#6C757D;
+$hoveredDefaultColor:#E0E4EE;
+$mediumListsWidth:50%;
+$smallListsWidth:100%;
+$boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$font: 'Nunito', sans-serif;
+
+$bar-base: #bbbbbb;
+$color-bg: #f4f6f9;
+$card-color: #dc3545;
+
+$steps: 5; // Change in html
+$step-width: 100% / $steps;
+$step-point-width: 20px;
+$step-point-height: $step-point-width;
+$step-point-color: $bar-base;
+$step-point-bg: white;
+$step-font-size: 14px;
+$step-padding: 10px;
+$step-gap: 50px;
+
+$tab-spacing: 80px;
+
+$form-width: 700;
+
+$counter-spacing: 2px;
+$counter-font-size: 18px;
+
+$bar-transition-speed: 800ms;
+$bar-bg: #28a745;
+$bar-height: 4px;
+
+$status-width: 40px;
+
+@mixin traverse($n) {
+  $step: '';
+  $tab: '';
+
+  @for $i from 1 through $n {
+    $int: #{($n + 1) - $i};
+
+    & #step-#{$int}:checked #{$step} + div + div + div {
+      & > .tab:nth-of-type(#{$int}) {
+        opacity: 1;
+      }
+    }
+
+    $step: $step + '+ input';
+    $tab: $tab + '+ div';
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+%center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+}
+
+%bar {
+  height: $bar-height;
+  left: $step-width / 2;
+  background: $bar-bg;
+  transition: width $bar-transition-speed cubic-bezier(0.915, 0.015, 0.300, 1.005);
+  border-radius: $bar-height;
+  width: 0;
+  position: relative;
+  z-index: -1;
+}
+
+%counter {
+  @extend %center;
+  width: $step-point-width;
+  height: $step-point-height;
+  color: $step-point-color;
+  background: $step-point-bg;
+  line-height: $step-point-height;
+  border: $counter-spacing solid $bar-base;
+  font-size: $counter-font-size;
+  top: $bar-height / 2;
+  border-radius: 100%;
+  transition: all .4s;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+%step {
+  width: $step-width;
+  font-size: $step-font-size;
+  padding: 0 $step-padding;
+  transition: all .4s;
+  float: left;
+  text-align: center;
+  position: relative;
+
+
+  label {
+    font-size: 18px;
+    padding-top: $step-gap;
+    top: -20px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color:$bar-base;
+  }
+
+  &:before {
+    @extend %counter;
+  }
+
+  &:hover {
+    color: white;
+
+    &:before {
+      color: white;
+    }
+  }
+}
+
+.koala-stats {
+  display: flex;
+  margin: $mainMargin;
+  align-items: center;
+
+  .divided-stats {
+    margin: 10px 20px;
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    height: 90px;
+    border-radius: $mainBorderRadius;
+
+    .divided-stats-icon {
+      display: flex;
+      justify-content: center;
+      width: 50%;
+      height: 40%;
+      margin-top: auto;
+      margin-bottom: auto;
+      border-right: 1px solid $mainColor;
+
+      .stats-icon {
+        font-size: $mainFontSize * 4; // 45PX
+        color: $mainColor;
+      }
+
+      /*&::after{
+        content: '';
+        border-right: 1px solid $mainColor;
+        height: 30px;
+        position: absolute;
+      }*/
+    }
+
+    .divided-stats-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: $mainFontFamily;
+      width: 50%;
+
+      .stats-header {
+        //margin-bottom: $mainMargin - 5;
+        line-height: 1.75;
+        font-size: 12px;
+        color: #6C757D;
+      }
+
+      .stats-count {
+        font-size: 17px;
+        color: $blackColor;
+        font-weight: bold;
+      }
+    }
+
+    &::before {
+      content: '';
+      border-left: 6px solid $mainColor;
+      border-radius: $mainBorderRadius 0 0 $mainBorderRadius;
+      position: absolute;
+      // left: 20px;
+      //height: 50px;
+    }
+  }
+
+  .focused-stats {
+    margin: 10px 20px;
+    box-sizing: border-box;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    border-radius: 0 5px 5px 0;
+    height: 90px;
+    padding: 0;
+
+    .focused-stats-icon {
+      display: flex;
+      justify-content: center;
+      width: 35%;
+      height: 100%;
+      margin: 0;
+      align-items: center;
+      background-color: #007BFF;
+      color: #fff;
+
+      .stats-icon {
+        font-size: $mainFontSize * 5;
+      }
+    }
+
+    .focused-stats-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-family: $mainFontFamily;
+      width: 70%;
+      margin: 0;
+      padding-left: 20px;
+      border-radius: 0 5px 5px 0;
+      .stats-header {
+        //margin-bottom: $mainMargin - 5;
+        line-height: 1.75;
+        font-size: 14px;
+        color: #6C757D;
+        margin-bottom: 5px;
+      }
+
+      .stats-count {
+        font-size: 19px;
+        color: $blackColor;
+        font-weight: bold;
+      }
+    }
+  }
+    .focused-stats-background{
+      @extend .focused-stats;
+      .focused-stats-background-icon{
+        @extend .focused-stats-icon;
+      }
+      .focused-stats-background-text{
+        @extend .focused-stats-text;
+        background-color: #007BFF;
+        opacity: 0.3;
+        .stats-header, .stats-count {
+          color: #fff;
+        }
+      }
+    }
+  .circular-progress-stats{
+    @extend .focused-stats;
+    .circular-progress-stats-progressbar{
+      width: 30%;
+      height: 100%;
+    }
+    .circular-progress-stats-text{
+      @extend .focused-stats-text;
+    }
+  }
+
+
+
+    .stats-danger {
+      @extend .divided-stats;
+
+      &::before {
+        border-left: 6px solid $dangerColor;
+        position: absolute;
+      }
+
+      .divided-stats-icon {
+        border-right: 1px solid $dangerColor;
+
+        .stats-icon {
+          color: $dangerColor;
+        }
+      }
+
+      .focused-stats-icon {
+        background-color: $dangerColor;
+      }
+      .focused-stats-background-icon {
+        background-color: $dangerColor;
+      }
+      .focused-stats-background-text{
+        background-color: $dangerColor;
+        opacity: 0.3;
+        .stats-header, .stats-count {
+          color: #fff;
+        }
+      }
+    }
+
+    .stats-success {
+      &::before {
+        border-left: 6px solid $successColor;
+        position: absolute;
+      }
+
+      .divided-stats-icon {
+        border-right: 1px solid $successColor;
+
+        .stats-icon {
+          color: $successColor;
+        }
+      }
+
+      .focused-stats-icon {
+        background-color: $successColor;
+      }
+      .focused-stats-background-icon {
+        background-color: $successColor;
+      }
+      .focused-stats-background-text{
+        background-color: $successColor;
+        opacity: 0.3;
+        .stats-header, .stats-count {
+          color: #fff;
+        }
+      }
+    }
+
+    .stats-warning {
+      &::before {
+        border-left: 6px solid $warningColor;
+      }
+
+      .divided-stats-icon {
+        border-right: 1px solid $warningColor;
+
+        .stats-icon {
+          color: $warningColor;
+        }
+      }
+
+      .focused-stats-icon {
+        background-color: $warningColor;
+      }
+      .focused-stats-background-icon {
+        background-color: $warningColor;
+      }
+      .focused-stats-background-text{
+        background-color: $warningColor;
+        opacity: 0.3;
+        .stats-header, .stats-count {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 992px) and (min-width: 768px) {
+    .koala-stats {
+      //flex-direction: column;
+      flex-wrap: wrap;
+
+      .divided-stats, .stats-danger, .stats-success, .stats-warning {
+        width: 33.33333%;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .koala-stats {
+      //flex-direction: column;
+      flex-wrap: wrap;
+
+      .divided-stats, .stats-danger, .stats-success, .stats-warning {
+        width: 50%;
+      }
+    }
+  }
+  @media only screen and (max-width: 575px) {
+    .koala-stats {
+      //flex-direction: column;
+      flex-wrap: wrap;
+
+      .divided-stats, .stats-danger, .stats-success, .stats-warning, .focused-stats {
+        width: 100%;
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
