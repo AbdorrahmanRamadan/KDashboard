@@ -1,0 +1,2487 @@
+@-webkit-keyframes bars {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 60px 0; } }
+@keyframes bars {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: 60px 0; } }
+.koala-progress-bar-data, .koala-progress-bar-gradient-one, .koala-progress-bar-gradient, .progress-bar-border-radius-sm, .progress-bar-sm, .progress-bar-light-radius-sm, .progress-bar-border-radius-md, .progress-bar-md, .progress-bar-light-radius-md, .progress-bar-border-radius-lg, .progress-bar-lg, .progress-bar-light-radius-lg {
+  background-color: #d8d8d8;
+  width: 40%;
+  margin: 10px;
+  font-size: 20px; }
+
+.koala-progress-bar-gradient .koala-primary-info, .koala-progress-bar-gradient .koala-primary-danger, .progress-bar-border-radius-sm .koala-success-sm, .progress-bar-sm .koala-success-sm, .border-success .koala-border-success, .border-color-none .koala-success, .progress-bar-light-radius-sm .koala-success-sm, .koala-progress-bar-data .koala-success, .koala-progress-bar-data .koala-radius-success, .koala-progress-bar-gradient-one .koala-radius-success, .koala-progress-bar-gradient-one .koala-success, .koala-progress-bar-dotted .koala-dotted-success, .koala-progress-bar-dotted .koala-success, .progress-bar-border-radius-sm .koala-primary-sm, .progress-bar-sm .koala-primary-sm, .border-primary .koala-border-primary, .border-color-none .koala-primary, .progress-bar-light-radius-sm .koala-primary-sm, .koala-progress-bar-data .koala-primary, .koala-progress-bar-data .koala-radius-primary, .koala-progress-bar-gradient-one .koala-radius-primary, .koala-progress-bar-gradient-one .koala-primary, .koala-progress-bar-dotted .koala-dotted-primary, .koala-progress-bar-dotted .koala-primary, .progress-bar-border-radius-sm .koala-danger-sm, .progress-bar-sm .koala-danger-sm, .border-danger .koala-border-danger, .border-color-none .koala-danger, .progress-bar-light-radius-sm .koala-danger-sm, .koala-progress-bar-data .koala-danger, .koala-progress-bar-data .koala-radius-danger, .koala-progress-bar-gradient-one .koala-radius-danger, .koala-progress-bar-gradient-one .koala-danger, .koala-progress-bar-dotted .koala-dotted-danger, .koala-progress-bar-dotted .koala-danger, .progress-bar-border-radius-sm .koala-golden-sm, .progress-bar-sm .koala-golden-sm, .border-golden .koala-border-golden, .border-color-none .koala-golden, .progress-bar-light-radius-sm .koala-golden-sm, .koala-progress-bar-data .koala-golden, .koala-progress-bar-data .koala-radius-golden, .koala-progress-bar-gradient-one .koala-radius-golden, .koala-progress-bar-gradient-one .koala-golden, .koala-progress-bar-dotted .koala-dotted-golden, .koala-progress-bar-dotted .koala-golden, .progress-bar-border-radius-sm .koala-info-sm, .progress-bar-sm .koala-info-sm, .border-info .koala-border-info, .border-color-none .koala-info, .progress-bar-light-radius-sm .koala-info-sm, .koala-progress-bar-data .koala-info, .koala-progress-bar-data .koala-radius-info, .koala-progress-bar-gradient-one .koala-radius-info, .koala-progress-bar-gradient-one .koala-info, .koala-progress-bar-dotted .koala-dotted-info, .koala-progress-bar-dotted .koala-info, .progress-bar-border-radius-md .koala-success-md, .progress-bar-md .koala-success-md, .progress-bar-light-radius-md .koala-success-md, .progress-bar-border-radius-md .koala-primary-md, .progress-bar-md .koala-primary-md, .progress-bar-light-radius-md .koala-primary-md, .progress-bar-border-radius-md .koala-danger-md, .progress-bar-md .koala-danger-md, .progress-bar-light-radius-md .koala-danger-md, .progress-bar-border-radius-md .koala-golden-md, .progress-bar-md .koala-golden-md, .progress-bar-light-radius-md .koala-golden-md, .progress-bar-border-radius-md .koala-info-md, .progress-bar-md .koala-info-md, .progress-bar-light-radius-md .koala-info-md, .progress-bar-border-radius-lg .koala-success-lg, .progress-bar-lg .koala-success-lg, .progress-bar-light-radius-lg .koala-success-lg, .progress-bar-border-radius-lg .koala-primary-lg, .progress-bar-lg .koala-primary-lg, .progress-bar-light-radius-lg .koala-primary-lg, .progress-bar-border-radius-lg .koala-danger-lg, .progress-bar-lg .koala-danger-lg, .progress-bar-light-radius-lg .koala-danger-lg, .progress-bar-border-radius-lg .koala-golden-lg, .progress-bar-lg .koala-golden-lg, .progress-bar-light-radius-lg .koala-golden-lg, .progress-bar-border-radius-lg .koala-info-lg, .progress-bar-lg .koala-info-lg, .progress-bar-light-radius-lg .koala-info-lg {
+  color: #fff;
+  display: flex;
+  align-items: self-end;
+  justify-content: flex-end;
+  height: 100%;
+  transition: 1s ease 0.5s;
+  opacity: 0;
+  width: 0; }
+
+.koala-progress-bar-gradient-one .data-done, .koala-progress-bar-gradient .data-done-outside, .progress-bar-border-radius-sm .data-done-outside-success, .progress-bar-sm .data-done-outside-success, .koala-progress-bar-border .data-done-outside-success, .progress-bar-light-radius-sm .data-done-outside-success, .koala-progress-bar-gradient-one .data-done-outside-success, .koala-progress-bar-dotted .data-done-outside-success, .progress-bar-border-radius-sm .data-done-outside-primary, .progress-bar-sm .data-done-outside-primary, .koala-progress-bar-border .data-done-outside-primary, .progress-bar-light-radius-sm .data-done-outside-primary, .koala-progress-bar-gradient-one .data-done-outside-primary, .koala-progress-bar-dotted .data-done-outside-primary, .progress-bar-border-radius-sm .data-done-outside-danger, .progress-bar-sm .data-done-outside-danger, .koala-progress-bar-border .data-done-outside-danger, .progress-bar-light-radius-sm .data-done-outside-danger, .koala-progress-bar-gradient-one .data-done-outside-danger, .koala-progress-bar-dotted .data-done-outside-danger, .progress-bar-border-radius-sm .data-done-outside-golden, .progress-bar-sm .data-done-outside-golden, .koala-progress-bar-border .data-done-outside-golden, .progress-bar-light-radius-sm .data-done-outside-golden, .koala-progress-bar-gradient-one .data-done-outside-golden, .koala-progress-bar-dotted .data-done-outside-golden, .progress-bar-border-radius-sm .data-done-outside-info, .progress-bar-sm .data-done-outside-info, .koala-progress-bar-border .data-done-outside-info, .progress-bar-light-radius-sm .data-done-outside-info, .koala-progress-bar-gradient-one .data-done-outside-info, .koala-progress-bar-dotted .data-done-outside-info, .progress-bar-border-radius-md .data-done-outside-success, .progress-bar-md .data-done-outside-success, .progress-bar-light-radius-md .data-done-outside-success, .progress-bar-border-radius-md .data-done-outside-primary, .progress-bar-md .data-done-outside-primary, .progress-bar-light-radius-md .data-done-outside-primary, .progress-bar-border-radius-md .data-done-outside-danger, .progress-bar-md .data-done-outside-danger, .progress-bar-light-radius-md .data-done-outside-danger, .progress-bar-border-radius-md .data-done-outside-golden, .progress-bar-md .data-done-outside-golden, .progress-bar-light-radius-md .data-done-outside-golden, .progress-bar-border-radius-md .data-done-outside-info, .progress-bar-md .data-done-outside-info, .progress-bar-light-radius-md .data-done-outside-info, .progress-bar-border-radius-lg .data-done-outside-success, .progress-bar-lg .data-done-outside-success, .progress-bar-light-radius-lg .data-done-outside-success, .progress-bar-border-radius-lg .data-done-outside-primary, .progress-bar-lg .data-done-outside-primary, .progress-bar-light-radius-lg .data-done-outside-primary, .progress-bar-border-radius-lg .data-done-outside-danger, .progress-bar-lg .data-done-outside-danger, .progress-bar-light-radius-lg .data-done-outside-danger, .progress-bar-border-radius-lg .data-done-outside-golden, .progress-bar-lg .data-done-outside-golden, .progress-bar-light-radius-lg .data-done-outside-golden, .progress-bar-border-radius-lg .data-done-outside-info, .progress-bar-lg .data-done-outside-info, .progress-bar-light-radius-lg .data-done-outside-info {
+  position: absolute;
+  top: 0;
+  right: -60px; }
+
+.koala-progress-bar-gradient .koala-primary-info .data-done-inside, .koala-progress-bar-gradient .koala-primary-danger .data-done-inside, .progress-bar-border-radius-sm .koala-success-sm .data-done-inside-success, .progress-bar-sm .koala-success-sm .data-done-inside-success, .border-success .koala-border-success .data-done-inside-success, .border-color-none .koala-success .data-done-inside-success, .progress-bar-light-radius-sm .koala-success-sm .data-done-inside-success, .progress-bar-border-radius-sm .koala-primary-sm .data-done-inside-primary, .progress-bar-sm .koala-primary-sm .data-done-inside-primary, .border-primary .koala-border-primary .data-done-inside-primary, .border-color-none .koala-primary .data-done-inside-primary, .progress-bar-light-radius-sm .koala-primary-sm .data-done-inside-primary, .progress-bar-border-radius-sm .koala-danger-sm .data-done-inside-danger, .progress-bar-sm .koala-danger-sm .data-done-inside-danger, .border-danger .koala-border-danger .data-done-inside-danger, .border-color-none .koala-danger .data-done-inside-danger, .progress-bar-light-radius-sm .koala-danger-sm .data-done-inside-danger, .progress-bar-border-radius-sm .koala-golden-sm .data-done-inside-golden, .progress-bar-sm .koala-golden-sm .data-done-inside-golden, .border-golden .koala-border-golden .data-done-inside-golden, .border-color-none .koala-golden .data-done-inside-golden, .progress-bar-light-radius-sm .koala-golden-sm .data-done-inside-golden, .progress-bar-border-radius-sm .koala-info-sm .data-done-inside-info, .progress-bar-sm .koala-info-sm .data-done-inside-info, .border-info .koala-border-info .data-done-inside-info, .border-color-none .koala-info .data-done-inside-info, .progress-bar-light-radius-sm .koala-info-sm .data-done-inside-info, .progress-bar-border-radius-md .koala-success-md .data-done-inside-success, .progress-bar-md .koala-success-md .data-done-inside-success, .progress-bar-light-radius-md .koala-success-md .data-done-inside-success, .progress-bar-border-radius-md .koala-primary-md .data-done-inside-primary, .progress-bar-md .koala-primary-md .data-done-inside-primary, .progress-bar-light-radius-md .koala-primary-md .data-done-inside-primary, .progress-bar-border-radius-md .koala-danger-md .data-done-inside-danger, .progress-bar-md .koala-danger-md .data-done-inside-danger, .progress-bar-light-radius-md .koala-danger-md .data-done-inside-danger, .progress-bar-border-radius-md .koala-golden-md .data-done-inside-golden, .progress-bar-md .koala-golden-md .data-done-inside-golden, .progress-bar-light-radius-md .koala-golden-md .data-done-inside-golden, .progress-bar-border-radius-md .koala-info-md .data-done-inside-info, .progress-bar-md .koala-info-md .data-done-inside-info, .progress-bar-light-radius-md .koala-info-md .data-done-inside-info, .progress-bar-border-radius-lg .koala-success-lg .data-done-inside-success, .progress-bar-lg .koala-success-lg .data-done-inside-success, .progress-bar-light-radius-lg .koala-success-lg .data-done-inside-success, .progress-bar-border-radius-lg .koala-primary-lg .data-done-inside-primary, .progress-bar-lg .koala-primary-lg .data-done-inside-primary, .progress-bar-light-radius-lg .koala-primary-lg .data-done-inside-primary, .progress-bar-border-radius-lg .koala-danger-lg .data-done-inside-danger, .progress-bar-lg .koala-danger-lg .data-done-inside-danger, .progress-bar-light-radius-lg .koala-danger-lg .data-done-inside-danger, .progress-bar-border-radius-lg .koala-golden-lg .data-done-inside-golden, .progress-bar-lg .koala-golden-lg .data-done-inside-golden, .progress-bar-light-radius-lg .koala-golden-lg .data-done-inside-golden, .progress-bar-border-radius-lg .koala-info-lg .data-done-inside-info, .progress-bar-lg .koala-info-lg .data-done-inside-info, .progress-bar-light-radius-lg .koala-info-lg .data-done-inside-info {
+  color: #fff; }
+
+.koala-progress-bar-data {
+  position: relative;
+  background-color: #d8d8d8;
+  height: 20px;
+  border-radius: 20px; }
+
+.koala-progress-bar-gradient-one {
+  height: 20px;
+  border-radius: 20px;
+  position: relative; }
+  .koala-progress-bar-gradient-one .data-done {
+    right: 5px;
+    color: #fff; }
+
+.border-radius {
+  border-radius: 0; }
+
+.koala-progress-bar-gradient {
+  height: 20px;
+  color: #d8d8d8;
+  position: relative;
+  border-radius: 20px; }
+  .koala-progress-bar-gradient .koala-primary-info {
+    background: linear-gradient(to left, #47e7c7, #007bff);
+    border-radius: 20px;
+    /* box-shadow: 0 3px 3px -5px #007bff, 0 2px 5px #47e7c7;*/ }
+    .koala-progress-bar-gradient .koala-primary-info .data-done-inside {
+      margin-right: 2px; }
+
+.koala-progress-bar-gradient {
+  height: 20px;
+  color: #d8d8d8;
+  position: relative;
+  border-radius: 20px; }
+  .koala-progress-bar-gradient .koala-primary-danger {
+    background: linear-gradient(to right, #007bff, #dc3545);
+    border-radius: 20px;
+    /* box-shadow: 0 3px 3px -5px #007bff, 0 2px 5px #47e7c7;*/ }
+    .koala-progress-bar-gradient .koala-primary-danger .data-done-inside {
+      margin-right: 2px; }
+
+.progress-bar-border-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-sm .koala-success-sm {
+    background-color: #28a745;
+    border-radius: 20px; }
+    .progress-bar-border-radius-sm .koala-success-sm .data-done-inside-success {
+      margin-right: 10px; }
+  .progress-bar-border-radius-sm .data-done-outside-success {
+    color: #28a745; }
+
+.progress-bar-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative; }
+  .progress-bar-sm .koala-success-sm {
+    background-color: #28a745; }
+    .progress-bar-sm .koala-success-sm .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-sm .data-done-outside-success {
+    color: #28a745; }
+
+.background-success {
+  background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-success {
+    color: #28a745; }
+
+.border-success {
+  border: 2px #28a745 solid; }
+  .border-success .koala-border-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    position: relative; }
+    .border-success .koala-border-success .data-done-inside-success {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-sm .koala-success-sm {
+    background-color: #28a745;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #28a745; }
+    .progress-bar-light-radius-sm .koala-success-sm .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-light-radius-sm .data-done-outside-success {
+    color: #28a745; }
+
+.koala-progress-bar-data .koala-success {
+  background-color: #28a745;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-success {
+  background-color: #28a745;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-success {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #28a745; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-success {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #28a745; }
+
+.koala-progress-bar-gradient-one .koala-radius-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-success {
+  color: #28a745; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-success {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #28a745; }
+  .koala-progress-bar-vertical.background-success {
+    background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-success {
+  color: #28a745; }
+
+.progress-bar-border-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-sm .koala-primary-sm {
+    background-color: #007bff;
+    border-radius: 20px; }
+    .progress-bar-border-radius-sm .koala-primary-sm .data-done-inside-primary {
+      margin-right: 10px; }
+  .progress-bar-border-radius-sm .data-done-outside-primary {
+    color: #007bff; }
+
+.progress-bar-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative; }
+  .progress-bar-sm .koala-primary-sm {
+    background-color: #007bff; }
+    .progress-bar-sm .koala-primary-sm .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-sm .data-done-outside-primary {
+    color: #007bff; }
+
+.background-primary {
+  background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-primary {
+    color: #007bff; }
+
+.border-primary {
+  border: 2px #007bff solid; }
+  .border-primary .koala-border-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    position: relative; }
+    .border-primary .koala-border-primary .data-done-inside-primary {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-sm .koala-primary-sm {
+    background-color: #007bff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #007bff; }
+    .progress-bar-light-radius-sm .koala-primary-sm .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-light-radius-sm .data-done-outside-primary {
+    color: #007bff; }
+
+.koala-progress-bar-data .koala-primary {
+  background-color: #007bff;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-primary {
+  background-color: #007bff;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-primary {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #007bff; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-primary {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #007bff; }
+
+.koala-progress-bar-gradient-one .koala-radius-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-primary {
+  color: #007bff; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-primary {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #007bff; }
+  .koala-progress-bar-vertical.background-primary {
+    background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-primary {
+  color: #007bff; }
+
+.progress-bar-border-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-sm .koala-danger-sm {
+    background-color: #dc3545;
+    border-radius: 20px; }
+    .progress-bar-border-radius-sm .koala-danger-sm .data-done-inside-danger {
+      margin-right: 10px; }
+  .progress-bar-border-radius-sm .data-done-outside-danger {
+    color: #dc3545; }
+
+.progress-bar-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative; }
+  .progress-bar-sm .koala-danger-sm {
+    background-color: #dc3545; }
+    .progress-bar-sm .koala-danger-sm .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-sm .data-done-outside-danger {
+    color: #dc3545; }
+
+.background-danger {
+  background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-danger {
+    color: #dc3545; }
+
+.border-danger {
+  border: 2px #dc3545 solid; }
+  .border-danger .koala-border-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    position: relative; }
+    .border-danger .koala-border-danger .data-done-inside-danger {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-sm .koala-danger-sm {
+    background-color: #dc3545;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #dc3545; }
+    .progress-bar-light-radius-sm .koala-danger-sm .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-light-radius-sm .data-done-outside-danger {
+    color: #dc3545; }
+
+.koala-progress-bar-data .koala-danger {
+  background-color: #dc3545;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-danger {
+  background-color: #dc3545;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-danger {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #dc3545; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-danger {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #dc3545; }
+
+.koala-progress-bar-gradient-one .koala-radius-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-danger {
+  color: #dc3545; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-danger {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #dc3545; }
+  .koala-progress-bar-vertical.background-danger {
+    background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-danger {
+  color: #dc3545; }
+
+.progress-bar-border-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-sm .koala-golden-sm {
+    background-color: #ffc107;
+    border-radius: 20px; }
+    .progress-bar-border-radius-sm .koala-golden-sm .data-done-inside-golden {
+      margin-right: 10px; }
+  .progress-bar-border-radius-sm .data-done-outside-golden {
+    color: #ffc107; }
+
+.progress-bar-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative; }
+  .progress-bar-sm .koala-golden-sm {
+    background-color: #ffc107; }
+    .progress-bar-sm .koala-golden-sm .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-sm .data-done-outside-golden {
+    color: #ffc107; }
+
+.background-golden {
+  background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-golden {
+    color: #ffc107; }
+
+.border-golden {
+  border: 2px #ffc107 solid; }
+  .border-golden .koala-border-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    position: relative; }
+    .border-golden .koala-border-golden .data-done-inside-golden {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-sm .koala-golden-sm {
+    background-color: #ffc107;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #ffc107; }
+    .progress-bar-light-radius-sm .koala-golden-sm .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-light-radius-sm .data-done-outside-golden {
+    color: #ffc107; }
+
+.koala-progress-bar-data .koala-golden {
+  background-color: #ffc107;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-golden {
+  background-color: #ffc107;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-golden {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #ffc107; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-golden {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #ffc107; }
+
+.koala-progress-bar-gradient-one .koala-radius-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-golden {
+  color: #ffc107; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-golden {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #ffc107; }
+  .koala-progress-bar-vertical.background-golden {
+    background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-golden {
+  color: #ffc107; }
+
+.progress-bar-border-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-sm .koala-info-sm {
+    background-color: #47e7c7;
+    border-radius: 20px; }
+    .progress-bar-border-radius-sm .koala-info-sm .data-done-inside-info {
+      margin-right: 10px; }
+  .progress-bar-border-radius-sm .data-done-outside-info {
+    color: #47e7c7; }
+
+.progress-bar-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative; }
+  .progress-bar-sm .koala-info-sm {
+    background-color: #47e7c7; }
+    .progress-bar-sm .koala-info-sm .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-sm .data-done-outside-info {
+    color: #47e7c7; }
+
+.background-info {
+  background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-info {
+    color: #47e7c7; }
+
+.border-info {
+  border: 2px #47e7c7 solid; }
+  .border-info .koala-border-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    position: relative; }
+    .border-info .koala-border-info .data-done-inside-info {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-sm {
+  height: 10px;
+  font-size: 10px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-sm .koala-info-sm {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #47e7c7; }
+    .progress-bar-light-radius-sm .koala-info-sm .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-light-radius-sm .data-done-outside-info {
+    color: #47e7c7; }
+
+.koala-progress-bar-data .koala-info {
+  background-color: #47e7c7;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-info {
+  background-color: #47e7c7;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-info {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #47e7c7; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-info {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #47e7c7; }
+
+.koala-progress-bar-gradient-one .koala-radius-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-info {
+  color: #47e7c7; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-info {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #47e7c7; }
+  .koala-progress-bar-vertical.background-info {
+    background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-info {
+  color: #47e7c7; }
+
+.progress-bar-border-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-md .koala-success-md {
+    background-color: #28a745;
+    border-radius: 20px; }
+    .progress-bar-border-radius-md .koala-success-md .data-done-inside-success {
+      margin-right: 10px; }
+  .progress-bar-border-radius-md .data-done-outside-success {
+    color: #28a745; }
+
+.progress-bar-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative; }
+  .progress-bar-md .koala-success-md {
+    background-color: #28a745; }
+    .progress-bar-md .koala-success-md .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-md .data-done-outside-success {
+    color: #28a745; }
+
+.background-success {
+  background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-success {
+    color: #28a745; }
+
+.border-success {
+  border: 2px #28a745 solid; }
+  .border-success .koala-border-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    position: relative; }
+    .border-success .koala-border-success .data-done-inside-success {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-md .koala-success-md {
+    background-color: #28a745;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #28a745; }
+    .progress-bar-light-radius-md .koala-success-md .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-light-radius-md .data-done-outside-success {
+    color: #28a745; }
+
+.koala-progress-bar-data .koala-success {
+  background-color: #28a745;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-success {
+  background-color: #28a745;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-success {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #28a745; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-success {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #28a745; }
+
+.koala-progress-bar-gradient-one .koala-radius-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-success {
+  color: #28a745; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-success {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #28a745; }
+  .koala-progress-bar-vertical.background-success {
+    background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-success {
+  color: #28a745; }
+
+.progress-bar-border-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-md .koala-primary-md {
+    background-color: #007bff;
+    border-radius: 20px; }
+    .progress-bar-border-radius-md .koala-primary-md .data-done-inside-primary {
+      margin-right: 10px; }
+  .progress-bar-border-radius-md .data-done-outside-primary {
+    color: #007bff; }
+
+.progress-bar-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative; }
+  .progress-bar-md .koala-primary-md {
+    background-color: #007bff; }
+    .progress-bar-md .koala-primary-md .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-md .data-done-outside-primary {
+    color: #007bff; }
+
+.background-primary {
+  background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-primary {
+    color: #007bff; }
+
+.border-primary {
+  border: 2px #007bff solid; }
+  .border-primary .koala-border-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    position: relative; }
+    .border-primary .koala-border-primary .data-done-inside-primary {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-md .koala-primary-md {
+    background-color: #007bff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #007bff; }
+    .progress-bar-light-radius-md .koala-primary-md .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-light-radius-md .data-done-outside-primary {
+    color: #007bff; }
+
+.koala-progress-bar-data .koala-primary {
+  background-color: #007bff;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-primary {
+  background-color: #007bff;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-primary {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #007bff; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-primary {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #007bff; }
+
+.koala-progress-bar-gradient-one .koala-radius-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-primary {
+  color: #007bff; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-primary {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #007bff; }
+  .koala-progress-bar-vertical.background-primary {
+    background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-primary {
+  color: #007bff; }
+
+.progress-bar-border-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-md .koala-danger-md {
+    background-color: #dc3545;
+    border-radius: 20px; }
+    .progress-bar-border-radius-md .koala-danger-md .data-done-inside-danger {
+      margin-right: 10px; }
+  .progress-bar-border-radius-md .data-done-outside-danger {
+    color: #dc3545; }
+
+.progress-bar-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative; }
+  .progress-bar-md .koala-danger-md {
+    background-color: #dc3545; }
+    .progress-bar-md .koala-danger-md .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-md .data-done-outside-danger {
+    color: #dc3545; }
+
+.background-danger {
+  background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-danger {
+    color: #dc3545; }
+
+.border-danger {
+  border: 2px #dc3545 solid; }
+  .border-danger .koala-border-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    position: relative; }
+    .border-danger .koala-border-danger .data-done-inside-danger {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-md .koala-danger-md {
+    background-color: #dc3545;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #dc3545; }
+    .progress-bar-light-radius-md .koala-danger-md .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-light-radius-md .data-done-outside-danger {
+    color: #dc3545; }
+
+.koala-progress-bar-data .koala-danger {
+  background-color: #dc3545;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-danger {
+  background-color: #dc3545;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-danger {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #dc3545; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-danger {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #dc3545; }
+
+.koala-progress-bar-gradient-one .koala-radius-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-danger {
+  color: #dc3545; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-danger {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #dc3545; }
+  .koala-progress-bar-vertical.background-danger {
+    background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-danger {
+  color: #dc3545; }
+
+.progress-bar-border-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-md .koala-golden-md {
+    background-color: #ffc107;
+    border-radius: 20px; }
+    .progress-bar-border-radius-md .koala-golden-md .data-done-inside-golden {
+      margin-right: 10px; }
+  .progress-bar-border-radius-md .data-done-outside-golden {
+    color: #ffc107; }
+
+.progress-bar-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative; }
+  .progress-bar-md .koala-golden-md {
+    background-color: #ffc107; }
+    .progress-bar-md .koala-golden-md .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-md .data-done-outside-golden {
+    color: #ffc107; }
+
+.background-golden {
+  background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-golden {
+    color: #ffc107; }
+
+.border-golden {
+  border: 2px #ffc107 solid; }
+  .border-golden .koala-border-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    position: relative; }
+    .border-golden .koala-border-golden .data-done-inside-golden {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-md .koala-golden-md {
+    background-color: #ffc107;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #ffc107; }
+    .progress-bar-light-radius-md .koala-golden-md .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-light-radius-md .data-done-outside-golden {
+    color: #ffc107; }
+
+.koala-progress-bar-data .koala-golden {
+  background-color: #ffc107;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-golden {
+  background-color: #ffc107;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-golden {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #ffc107; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-golden {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #ffc107; }
+
+.koala-progress-bar-gradient-one .koala-radius-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-golden {
+  color: #ffc107; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-golden {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #ffc107; }
+  .koala-progress-bar-vertical.background-golden {
+    background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-golden {
+  color: #ffc107; }
+
+.progress-bar-border-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-md .koala-info-md {
+    background-color: #47e7c7;
+    border-radius: 20px; }
+    .progress-bar-border-radius-md .koala-info-md .data-done-inside-info {
+      margin-right: 10px; }
+  .progress-bar-border-radius-md .data-done-outside-info {
+    color: #47e7c7; }
+
+.progress-bar-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative; }
+  .progress-bar-md .koala-info-md {
+    background-color: #47e7c7; }
+    .progress-bar-md .koala-info-md .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-md .data-done-outside-info {
+    color: #47e7c7; }
+
+.background-info {
+  background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-info {
+    color: #47e7c7; }
+
+.border-info {
+  border: 2px #47e7c7 solid; }
+  .border-info .koala-border-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    position: relative; }
+    .border-info .koala-border-info .data-done-inside-info {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-md {
+  height: 15px;
+  font-size: 15px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-md .koala-info-md {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #47e7c7; }
+    .progress-bar-light-radius-md .koala-info-md .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-light-radius-md .data-done-outside-info {
+    color: #47e7c7; }
+
+.koala-progress-bar-data .koala-info {
+  background-color: #47e7c7;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-info {
+  background-color: #47e7c7;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-info {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #47e7c7; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-info {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #47e7c7; }
+
+.koala-progress-bar-gradient-one .koala-radius-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-info {
+  color: #47e7c7; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-info {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #47e7c7; }
+  .koala-progress-bar-vertical.background-info {
+    background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-info {
+  color: #47e7c7; }
+
+.progress-bar-border-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-lg .koala-success-lg {
+    background-color: #28a745;
+    border-radius: 20px; }
+    .progress-bar-border-radius-lg .koala-success-lg .data-done-inside-success {
+      margin-right: 10px; }
+  .progress-bar-border-radius-lg .data-done-outside-success {
+    color: #28a745; }
+
+.progress-bar-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative; }
+  .progress-bar-lg .koala-success-lg {
+    background-color: #28a745; }
+    .progress-bar-lg .koala-success-lg .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-lg .data-done-outside-success {
+    color: #28a745; }
+
+.background-success {
+  background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-success {
+    color: #28a745; }
+
+.border-success {
+  border: 2px #28a745 solid; }
+  .border-success .koala-border-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    position: relative; }
+    .border-success .koala-border-success .data-done-inside-success {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-lg .koala-success-lg {
+    background-color: #28a745;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #28a745; }
+    .progress-bar-light-radius-lg .koala-success-lg .data-done-inside-success {
+      margin-right: 2px; }
+  .progress-bar-light-radius-lg .data-done-outside-success {
+    color: #28a745; }
+
+.koala-progress-bar-data .koala-success {
+  background-color: #28a745;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-success {
+  background-color: #28a745;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-success {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #28a745; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-success {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #28a745; }
+
+.koala-progress-bar-gradient-one .koala-radius-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-success {
+  color: #28a745; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-success {
+    background-color: #28a745;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-success {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #28a745; }
+  .koala-progress-bar-vertical.background-success {
+    background-color: rgba(40, 167, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-success {
+  height: 100%;
+  position: relative;
+  border-color: #28a745;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #28a745 25%, transparent 25%, transparent 50%, #28a745 50%, #28a745 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-success {
+  color: #28a745; }
+
+.progress-bar-border-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-lg .koala-primary-lg {
+    background-color: #007bff;
+    border-radius: 20px; }
+    .progress-bar-border-radius-lg .koala-primary-lg .data-done-inside-primary {
+      margin-right: 10px; }
+  .progress-bar-border-radius-lg .data-done-outside-primary {
+    color: #007bff; }
+
+.progress-bar-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative; }
+  .progress-bar-lg .koala-primary-lg {
+    background-color: #007bff; }
+    .progress-bar-lg .koala-primary-lg .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-lg .data-done-outside-primary {
+    color: #007bff; }
+
+.background-primary {
+  background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-primary {
+    color: #007bff; }
+
+.border-primary {
+  border: 2px #007bff solid; }
+  .border-primary .koala-border-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    position: relative; }
+    .border-primary .koala-border-primary .data-done-inside-primary {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-lg .koala-primary-lg {
+    background-color: #007bff;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #007bff; }
+    .progress-bar-light-radius-lg .koala-primary-lg .data-done-inside-primary {
+      margin-right: 2px; }
+  .progress-bar-light-radius-lg .data-done-outside-primary {
+    color: #007bff; }
+
+.koala-progress-bar-data .koala-primary {
+  background-color: #007bff;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-primary {
+  background-color: #007bff;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-primary {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #007bff; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-primary {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #007bff; }
+
+.koala-progress-bar-gradient-one .koala-radius-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-primary {
+  color: #007bff; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-primary {
+    background-color: #007bff;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-primary {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #007bff; }
+  .koala-progress-bar-vertical.background-primary {
+    background-color: rgba(0, 123, 255, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-primary {
+  height: 100%;
+  position: relative;
+  border-color: #007bff;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #007bff 25%, transparent 25%, transparent 50%, #007bff 50%, #007bff 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-primary {
+  color: #007bff; }
+
+.progress-bar-border-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-lg .koala-danger-lg {
+    background-color: #dc3545;
+    border-radius: 20px; }
+    .progress-bar-border-radius-lg .koala-danger-lg .data-done-inside-danger {
+      margin-right: 10px; }
+  .progress-bar-border-radius-lg .data-done-outside-danger {
+    color: #dc3545; }
+
+.progress-bar-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative; }
+  .progress-bar-lg .koala-danger-lg {
+    background-color: #dc3545; }
+    .progress-bar-lg .koala-danger-lg .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-lg .data-done-outside-danger {
+    color: #dc3545; }
+
+.background-danger {
+  background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-danger {
+    color: #dc3545; }
+
+.border-danger {
+  border: 2px #dc3545 solid; }
+  .border-danger .koala-border-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    position: relative; }
+    .border-danger .koala-border-danger .data-done-inside-danger {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-lg .koala-danger-lg {
+    background-color: #dc3545;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #dc3545; }
+    .progress-bar-light-radius-lg .koala-danger-lg .data-done-inside-danger {
+      margin-right: 2px; }
+  .progress-bar-light-radius-lg .data-done-outside-danger {
+    color: #dc3545; }
+
+.koala-progress-bar-data .koala-danger {
+  background-color: #dc3545;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-danger {
+  background-color: #dc3545;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-danger {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #dc3545; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-danger {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #dc3545; }
+
+.koala-progress-bar-gradient-one .koala-radius-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-danger {
+  color: #dc3545; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-danger {
+    background-color: #dc3545;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-danger {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #dc3545; }
+  .koala-progress-bar-vertical.background-danger {
+    background-color: rgba(220, 53, 69, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-danger {
+  height: 100%;
+  position: relative;
+  border-color: #dc3545;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #dc3545 25%, transparent 25%, transparent 50%, #dc3545 50%, #dc3545 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-danger {
+  color: #dc3545; }
+
+.progress-bar-border-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-lg .koala-golden-lg {
+    background-color: #ffc107;
+    border-radius: 20px; }
+    .progress-bar-border-radius-lg .koala-golden-lg .data-done-inside-golden {
+      margin-right: 10px; }
+  .progress-bar-border-radius-lg .data-done-outside-golden {
+    color: #ffc107; }
+
+.progress-bar-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative; }
+  .progress-bar-lg .koala-golden-lg {
+    background-color: #ffc107; }
+    .progress-bar-lg .koala-golden-lg .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-lg .data-done-outside-golden {
+    color: #ffc107; }
+
+.background-golden {
+  background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-golden {
+    color: #ffc107; }
+
+.border-golden {
+  border: 2px #ffc107 solid; }
+  .border-golden .koala-border-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    position: relative; }
+    .border-golden .koala-border-golden .data-done-inside-golden {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-lg .koala-golden-lg {
+    background-color: #ffc107;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #ffc107; }
+    .progress-bar-light-radius-lg .koala-golden-lg .data-done-inside-golden {
+      margin-right: 2px; }
+  .progress-bar-light-radius-lg .data-done-outside-golden {
+    color: #ffc107; }
+
+.koala-progress-bar-data .koala-golden {
+  background-color: #ffc107;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-golden {
+  background-color: #ffc107;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-golden {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #ffc107; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-golden {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #ffc107; }
+
+.koala-progress-bar-gradient-one .koala-radius-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-golden {
+  color: #ffc107; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-golden {
+    background-color: #ffc107;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-golden {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #ffc107; }
+  .koala-progress-bar-vertical.background-golden {
+    background-color: rgba(255, 193, 7, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-golden {
+  height: 100%;
+  position: relative;
+  border-color: #ffc107;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #ffc107 25%, transparent 25%, transparent 50%, #ffc107 50%, #ffc107 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-golden {
+  color: #ffc107; }
+
+.progress-bar-border-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-border-radius-lg .koala-info-lg {
+    background-color: #47e7c7;
+    border-radius: 20px; }
+    .progress-bar-border-radius-lg .koala-info-lg .data-done-inside-info {
+      margin-right: 10px; }
+  .progress-bar-border-radius-lg .data-done-outside-info {
+    color: #47e7c7; }
+
+.progress-bar-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative; }
+  .progress-bar-lg .koala-info-lg {
+    background-color: #47e7c7; }
+    .progress-bar-lg .koala-info-lg .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-lg .data-done-outside-info {
+    color: #47e7c7; }
+
+.background-info {
+  background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-border {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+  .koala-progress-bar-border .data-done-outside-info {
+    color: #47e7c7; }
+
+.border-info {
+  border: 2px #47e7c7 solid; }
+  .border-info .koala-border-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    position: relative; }
+    .border-info .koala-border-info .data-done-inside-info {
+      margin-right: 10px; }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid; }
+  .border-color-none .koala-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff; }
+
+.progress-bar-light-radius-lg {
+  height: 20px;
+  font-size: 20px;
+  position: relative;
+  border-radius: 20px; }
+  .progress-bar-light-radius-lg .koala-info-lg {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    box-shadow: 1px 1px 7px 0 #47e7c7; }
+    .progress-bar-light-radius-lg .koala-info-lg .data-done-inside-info {
+      margin-right: 2px; }
+  .progress-bar-light-radius-lg .data-done-outside-info {
+    color: #47e7c7; }
+
+.koala-progress-bar-data .koala-info {
+  background-color: #47e7c7;
+  border-radius: 0; }
+.koala-progress-bar-data .koala-radius-info {
+  background-color: #47e7c7;
+  border-radius: 20px; }
+.koala-progress-bar-data .data-name {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #fff; }
+.koala-progress-bar-data .data-name-info {
+  position: absolute;
+  left: 10px;
+  top: -3px;
+  color: #47e7c7; }
+.koala-progress-bar-data .data-done {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #fff; }
+.koala-progress-bar-data .data-done-info {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: #47e7c7; }
+
+.koala-progress-bar-gradient-one .koala-radius-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-gradient-one .data-done-outside-info {
+  color: #47e7c7; }
+
+.koala-progress-bar-vertical {
+  width: 20px;
+  height: 250px;
+  background-color: #d8d8d8;
+  margin: 30px;
+  font-size: 20px;
+  border-radius: 20px;
+  display: inline-flex; }
+  .koala-progress-bar-vertical .koala-vertical-info {
+    background-color: #47e7c7;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+    transition: 1s ease 0.5s; }
+  .koala-progress-bar-vertical .data-done-info {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -10px;
+    color: #47e7c7; }
+  .koala-progress-bar-vertical.background-info {
+    background-color: rgba(71, 231, 199, 0.4); }
+
+.koala-progress-bar-dotted .koala-dotted-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 20px;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .koala-info {
+  height: 100%;
+  position: relative;
+  border-color: #47e7c7;
+  border-radius: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(135deg, #47e7c7 25%, transparent 25%, transparent 50%, #47e7c7 50%, #47e7c7 75%, transparent 75%, transparent);
+  animation: bars 3s linear infinite; }
+.koala-progress-bar-dotted .data-done-outside-info {
+  color: #47e7c7; }
+
+.koala-progress-bar-dashed {
+  height: 20px;
+  font-size: 20px;
+  padding: 2px;
+  background-clip: content-box;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 40%;
+  margin: 10px;
+  position: relative; }
+
+/*# sourceMappingURL=progress-bar.css.map */

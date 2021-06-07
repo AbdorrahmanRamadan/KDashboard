@@ -1,0 +1,357 @@
+$koala-primary:rgb(0,123,255);
+$koala-primary-opacity:rgba(0,123,255,.4);
+$koala-danger:rgb(220,53,69);
+$koala-danger-opacity:rgba(220,53,69,.4);
+$koala-success:rgb(40,167,69);
+$koala-success-opacity:rgba(40,167,69,.4);
+$koala-golden:rgb(255,193,7);
+$koala-golden-opacity:rgba(255,193,7,.4);
+$koala-info: #47e7c7;
+$koala-info-opacity:rgba(71,231,199,.4);
+$koala-primary-info:linear-gradient(to left, $koala-info, $koala-primary);
+$koala-primary-danger:linear-gradient(to right, $koala-primary, $koala-danger);
+
+@-webkit-keyframes bars{
+  from{
+    background-position:0 0;
+  }
+  to
+  {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes bars{
+  from{
+    background-position:0 0;
+  }
+  to
+  {
+    background-position: 60px 0;
+  }
+}
+
+%koala-progress-bar-empty{
+  background-color: #d8d8d8;
+  width: 40%;
+  margin:10px;
+  font-size: 20px;
+}
+
+%koala-progress-bar-normal{
+  color: #fff;
+  display: flex;
+  align-items: self-end;
+  justify-content: flex-end;
+  height: 100%;
+  transition: 1s ease 0.5s;
+  opacity: 0;
+  width: 0;
+}
+
+%data-done-outside{
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+%data-done-inside{
+  color: #fff;
+}
+.koala-progress-bar-data{
+  @extend %koala-progress-bar-empty;
+  position: relative;
+  background-color: #d8d8d8;
+  height: 20px;
+  border-radius: 20px;
+}
+.koala-progress-bar-gradient-one{
+  @extend %koala-progress-bar-empty;
+  height: 20px;
+  border-radius: 20px;
+  position: relative;
+  .data-done{
+    @extend %data-done-outside;
+    right: 5px;
+    color: #fff;
+  }
+}
+.border-radius{
+  border-radius: 0;
+}
+
+@each $statsType2, $color in  (primary-info,$koala-primary-info),(  primary-danger,$koala-primary-danger) {
+  .koala-progress-bar-gradient {
+    height: 20px;
+    color: #d8d8d8;
+    position: relative;
+    border-radius: 20px;
+    @extend %koala-progress-bar-empty;
+    .koala-#{$statsType2} {
+      background: $color;
+      border-radius: 20px;
+      @extend %koala-progress-bar-normal;
+      /* box-shadow: 0 3px 3px -5px #007bff, 0 2px 5px #47e7c7;*/
+      .data-done-inside{
+        @extend %data-done-inside;
+        margin-right: 2px;
+      }
+    }
+    .data-done-outside {
+      @extend %data-done-outside;
+    }
+  }
+}
+
+@each $statsType,$statsType2, $color ,$size ,$color-opacity in (success, sm ,$koala-success,10px,$koala-success-opacity), (primary,sm,$koala-primary,10px,$koala-primary-opacity),( danger,sm,$koala-danger,10px,$koala-danger-opacity),( golden,sm, $koala-golden,10px,$koala-golden-opacity),(info,sm, $koala-info,10px,$koala-info-opacity),(success, md ,$koala-success,15px,$koala-success-opacity), (primary,md,$koala-primary,15px,$koala-primary-opacity),( danger,md,$koala-danger,15px,$koala-danger-opacity),( golden,md, $koala-golden,15px,$koala-golden-opacity),(info,md, $koala-info,15px,$koala-info-opacity),(success, lg ,$koala-success,20px,$koala-success-opacity), (primary,lg,$koala-primary,20px,$koala-primary-opacity),( danger,lg,$koala-danger,20px,$koala-danger-opacity),( golden,lg, $koala-golden,20px,$koala-golden-opacity),(info,lg, $koala-info,20px,$koala-info-opacity) {
+  .progress-bar-border-radius-#{$statsType2} {
+    @extend %koala-progress-bar-empty;
+    height: $size;
+    font-size: $size;
+    position: relative;
+    border-radius: 20px;
+
+    .koala-#{$statsType}-#{$statsType2} {
+      @extend %koala-progress-bar-normal;
+      background-color: $color;
+      border-radius: 20px;
+
+      .data-done-inside-#{$statsType} {
+        @extend %data-done-inside;
+        margin-right: 10px;
+      }
+    }
+   .data-done-outside-#{$statsType} {
+        @extend %data-done-outside;
+     color: $color;
+    }
+  }
+
+  .progress-bar-#{$statsType2} {
+    @extend %koala-progress-bar-empty;
+    height: $size;
+    font-size: $size;
+    position: relative;
+    .koala-#{$statsType}-#{$statsType2} {
+      @extend %koala-progress-bar-normal;
+      background-color: $color;
+      .data-done-inside-#{$statsType} {
+        @extend %data-done-inside;
+        margin-right: 2px;
+      }
+    }
+    .data-done-outside-#{$statsType} {
+      @extend %data-done-outside;
+      color: $color;
+    }
+  }
+
+  .background-#{$statsType}{
+    background-color: $color-opacity;
+  }
+  .koala-progress-bar-border{
+    height: 20px;
+    font-size: 20px;
+    padding: 2px;
+    background-clip: content-box;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 40%;
+    margin:10px;
+    position: relative;
+    .data-done-outside-#{$statsType} {
+      @extend %data-done-outside;
+      color: $color;
+    }
+  }
+
+  .border-#{$statsType} {
+    border: 2px $color solid;
+    .koala-border-#{$statsType} {
+      @extend %koala-progress-bar-normal;
+      background-color: $color;
+      border-radius: 20px;
+      position: relative;
+      .data-done-inside-#{$statsType} {
+        @extend %data-done-inside;
+        margin-right: 10px;
+      }
+    }
+  }
+
+.border-color-none {
+  border: 2px #d8d8d8 solid;
+  .koala-#{$statsType} {
+    @extend %koala-progress-bar-normal;
+    background-color: $color;
+    border-radius: 20px;
+    color: #fff;
+    .data-done-inside-#{$statsType} {
+      @extend %data-done-inside;
+    }
+  }
+}
+
+  .progress-bar-light-radius-#{$statsType2} {
+    @extend %koala-progress-bar-empty;
+    height: $size;
+    font-size: $size;
+    position: relative;
+    border-radius: 20px;
+    .koala-#{$statsType}-#{$statsType2} {
+      @extend %koala-progress-bar-normal;
+      background-color: $color;
+      border-radius: 20px;
+      box-shadow: 1px 1px 7px 0 $color;
+      .data-done-inside-#{$statsType} {
+        @extend %data-done-inside;
+        margin-right: 2px;
+      }
+    }
+    .data-done-outside-#{$statsType} {
+      @extend %data-done-outside;
+      color: $color;
+    }
+  }
+
+.koala-progress-bar-data{
+  .koala-#{$statsType}{
+    @extend %koala-progress-bar-normal;
+    background-color: $color;
+    border-radius: 0;
+  }
+  .koala-radius-#{$statsType}{
+    @extend %koala-progress-bar-normal;
+    background-color: $color;
+    border-radius: 20px;
+  }
+  .data-name{
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    color: #fff;
+  }
+  .data-name-#{$statsType}{
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    color: $color;
+  }
+  .data-done{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: #fff;
+  }
+  .data-done-#{$statsType}{
+    position: absolute;
+    right: 5px;
+    top: 0;
+    color: $color;
+  }
+}
+
+  .koala-progress-bar-gradient-one{
+    .koala-radius-#{$statsType}{
+      @extend %koala-progress-bar-normal;
+      height: 100%;
+      position: relative;
+      border-color: $color;
+      border-radius: 20px;
+      background-size: 30px 30px;
+      background-image: linear-gradient(135deg, $color 25%,
+              transparent 25%,
+              transparent 50%, $color 50%, $color 75%,
+              transparent 75%, transparent);
+      animation: bars 3s linear infinite;
+    }
+    .koala-#{$statsType}{
+      @extend %koala-progress-bar-normal;
+      height: 100%;
+      position: relative;
+      border-color: $color;
+      border-radius: 0;
+      background-size: 30px 30px;
+      background-image: linear-gradient(135deg, $color 25%,
+              transparent 25%,
+              transparent 50%, $color 50%, $color 75%,
+              transparent 75%, transparent);
+      animation:bars 3s linear infinite;
+    }
+    .data-done-outside-#{$statsType}{
+      @extend %data-done-outside;
+      color: $color;
+    }
+  }
+
+  .koala-progress-bar-vertical{
+    width: 20px;
+    height: 250px;
+    background-color: #d8d8d8;
+    margin:30px;
+    font-size: 20px;
+    border-radius: 20px;
+    display: inline-flex;
+    .koala-vertical-#{$statsType} {
+      background-color: $color;
+      border-radius: 20px;
+      color: #fff;
+      display: flex;
+      align-self: flex-end;
+      justify-content: flex-end;
+      width: 100%;
+      transition: 1s ease 0.5s;
+    }
+    .data-done-#{$statsType}{
+      position: absolute;
+      margin-top: -30px;
+      margin-left:-10px ;
+      color: $color;
+    }
+    &.background-#{$statsType}{
+      background-color: $color-opacity;
+    }
+  }
+  .koala-progress-bar-dotted{
+      .koala-dotted-#{$statsType}{
+        @extend %koala-progress-bar-normal;
+        height: 100%;
+        position: relative;
+        border-color: $color;
+        border-radius: 20px;
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg, $color 25%,
+                transparent 25%,
+                transparent 50%, $color 50%, $color 75%,
+                transparent 75%, transparent);
+        animation: bars 3s linear infinite;
+      }
+      .koala-#{$statsType}{
+        @extend %koala-progress-bar-normal;
+        height: 100%;
+        position: relative;
+        border-color: $color;
+        border-radius: 0;
+        background-size: 30px 30px;
+        background-image: linear-gradient(135deg, $color 25%,
+                transparent 25%,
+                transparent 50%, $color 50%, $color 75%,
+                transparent 75%, transparent);
+        animation:bars 3s linear infinite;
+      }
+      .data-done-outside-#{$statsType}{
+        @extend %data-done-outside;
+        color: $color;
+      }
+    }
+  }
+  .koala-progress-bar-dashed{
+    height: 20px;
+    font-size: 20px;
+    padding: 2px;
+    background-clip: content-box;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 40%;
+    margin:10px;
+    position: relative;
+  }
