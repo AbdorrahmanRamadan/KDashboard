@@ -1,0 +1,112 @@
+.success.lighten .icon {
+  color: #28a745;
+  border-color: #28a745;
+}
+.success.lighten .data {
+  color: #28a745;
+}
+.success.background {
+  background-color: #28a745;
+}
+.success.background .icon {
+  color: white;
+  border-color: white;
+}
+.success.background .data {
+  color: white;
+}
+
+.primary.lighten .icon {
+  color: #007bff;
+  border-color: #007bff;
+}
+.primary.lighten .data {
+  color: #007bff;
+}
+.primary.background {
+  background-color: #007bff;
+}
+.primary.background .icon {
+  color: white;
+  border-color: white;
+}
+.primary.background .data {
+  color: white;
+}
+
+.danger.lighten .icon {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+.danger.lighten .data {
+  color: #dc3545;
+}
+.danger.background {
+  background-color: #dc3545;
+}
+.danger.background .icon {
+  color: white;
+  border-color: white;
+}
+.danger.background .data {
+  color: white;
+}
+
+.warning.lighten .icon {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+.warning.lighten .data {
+  color: #ffc107;
+}
+.warning.background {
+  background-color: #ffc107;
+}
+.warning.background .icon {
+  color: white;
+  border-color: white;
+}
+.warning.background .data {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.container .lighten, .container .background {
+  position: relative;
+  margin: 50px;
+  padding: 35px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: -4px 4px 4px rgba(69, 69, 69, 0.1), 4px 4px 4px rgba(69, 69, 69, 0.1), -1px -1px 2px rgba(69, 69, 69, 0.1);
+  width: 9%;
+  border-top: 1px solid rgba(69, 69, 69, 0.1);
+}
+.container .lighten .icon, .container .background .icon {
+  position: absolute;
+  top: 0px;
+  left: 145px;
+  font-size: 3.2em;
+  order: 0;
+  text-align: center;
+}
+.container .lighten .data, .container .background .data {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.container .lighten .data .data-name, .container .background .data .data-name {
+  font-size: 14px;
+}
+.container .lighten .data .data-value, .container .background .data .data-value {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=Background&lighten.css.map */

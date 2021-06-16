@@ -1,0 +1,68 @@
+$primary:rgb(0,123,255);
+$danger:rgb(220,53,69);
+$success:rgb(40,167,69);
+$golden:rgb(255,193,7);
+*{
+  perspective: 600px;
+}
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+  .head-icon{
+    position: relative;
+    text-align: center;
+    color:#fff;
+    width: 12.5%;
+    transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius:5px;
+    &:hover {
+      transform: translate3d(5px, 0px, 20px);
+      box-shadow: -6px 6px 6px rgba(69, 69, 69, .1), 6px 6px 6px rgba(69, 69, 69, .1), -2px -2px 3px rgba(69, 69, 69, .1);
+      transition: all .2s ease-in-out;
+    }
+    .icon{
+      font-size: 55px;
+      line-height: 46px;
+      color:white;
+      padding: 10px 10px 40px 10px;
+      border-radius: 5px 5px 0 0;
+      order: 0;
+    }
+    .data-name{
+      font-size: 16px;
+      position: absolute;
+      top: auto;
+      left: 13.5%;
+      border-radius: 20px;
+      padding: 10px 25px;
+      font-weight: bold;
+      order: 2;
+    }
+    .percent{
+      font-size: 35px;
+      font-weight: bolder;
+      padding: 30px;
+      border-radius: 0 0 5px 5px;
+      order: 1;
+    }
+  }
+  @each $statsType, $color, $backgroundColor in (success, $success,rgba(40,167,69,.3)), (primary, $primary,rgba(0,123,255,.3)),( danger, $danger,rgba(220,53,69,.3)),( golden, $golden,rgba(255,193,7,.3)) {
+    .koala-#{$statsType} {
+      .icon{
+        background-color: $backgroundColor;
+      }
+      .percent{
+        background-color: $color;
+        box-shadow: -1px 1px 1px $backgroundColor, 1px 1px 1px $backgroundColor;
+      }
+      .data-name{
+        background-color: $color;
+      }
+    }
+  }
+}
