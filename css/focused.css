@@ -1,0 +1,85 @@
+* {
+  perspective: 600px;
+  font-family: Arial; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px; }
+  .container .koala-success .icon {
+    background-color: #28a745;
+    border-color: #28a745; }
+  .container .koala-success .data {
+    color: #28a745; }
+  .container .koala-primary .icon {
+    background-color: #007bff;
+    border-color: #007bff; }
+  .container .koala-primary .data {
+    color: #007bff; }
+  .container .koala-danger .icon {
+    background-color: #dc3545;
+    border-color: #dc3545; }
+  .container .koala-danger .data {
+    color: #dc3545; }
+  .container .koala-golden .icon {
+    background-color: #ffc107;
+    border-color: #ffc107; }
+  .container .koala-golden .data {
+    color: #ffc107; }
+
+.icon-focused-circle, .icon-focused-square {
+  padding: 10px 10px;
+  border-radius: 3px;
+  box-shadow: -4px 4px 4px rgba(69, 69, 69, 0.1), 4px 4px 4px rgba(69, 69, 69, 0.1), -1px -1px 2px rgba(69, 69, 69, 0.1);
+  width: 14%;
+  transition: all .5s ease-in-out;
+  display: flex;
+  flex-direction: row; }
+  .icon-focused-circle:hover, .icon-focused-square:hover {
+    transform: translate3d(5px, 0px, 20px);
+    box-shadow: -4px 6px 6px rgba(69, 69, 69, 0.1), 6px 6px 6px rgba(69, 69, 69, 0.1), -2px -2px 3px rgba(69, 69, 69, 0.1);
+    transition: all .5s ease-in-out; }
+  .icon-focused-circle .icon, .icon-focused-square .icon {
+    width: 25%;
+    color: white;
+    font-size: 33px;
+    order: 0;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 50%; }
+    .icon-focused-circle .icon i, .icon-focused-square .icon i {
+      margin-top: 15%; }
+  .icon-focused-circle .data, .icon-focused-square .data {
+    width: 75%;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: 10px; }
+    .icon-focused-circle .data .data-name, .icon-focused-square .data .data-name {
+      font-size: 14px;
+      padding: 2px; }
+    .icon-focused-circle .data .data-value, .icon-focused-square .data .data-value {
+      font-size: 16px;
+      font-weight: bold;
+      padding: 2px; }
+
+.container .icon-focused-circle .icon {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all .5s ease-in-out; }
+.container .icon-focused-circle:hover .icon {
+  border-radius: 3px;
+  transition: all .5s ease-in-out; }
+
+.container .icon-focused-square .icon {
+  border-radius: 3px;
+  width: 45px;
+  height: 45px;
+  padding-bottom: 2px;
+  transition: all .5s ease-in-out; }
+.container .icon-focused-square:hover .icon {
+  border-radius: 50%;
+  transition: all .5s ease-in-out; }
+
+/*# sourceMappingURL=focused.css.map */

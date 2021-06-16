@@ -1,0 +1,52 @@
+* {
+  perspective: 600px;
+  font-family: Arial; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px; }
+  .container .center-icon {
+    text-align: center;
+    color: #fff;
+    width: 20%;
+    border-radius: 2px;
+    box-shadow: -2px 2px 3px rgba(69, 69, 69, 0.1), 2px 2px 3px rgba(69, 69, 69, 0.1), -1px -1px 1px rgba(69, 69, 69, 0.2);
+    transition: all .2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    .container .center-icon:hover {
+      transform: translate3d(0, 0, 20px);
+      box-shadow: -4px 6px 6px rgba(69, 69, 69, 0.1), 6px 6px 6px rgba(69, 69, 69, 0.1), -2px -2px 3px rgba(69, 69, 69, 0.1);
+      transition: all .2s ease-in-out; }
+    .container .center-icon .icon {
+      font-size: 40px;
+      line-height: 40px;
+      order: 0;
+      color: white;
+      padding-top: 10px; }
+    .container .center-icon .data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .container .center-icon .data .data-value {
+        order: 1;
+        font-size: 23px;
+        font-weight: bolder;
+        margin-top: 5px; }
+      .container .center-icon .data .data-name {
+        order: 2;
+        font-size: 14px;
+        margin-bottom: 5px; }
+  .container .koala-success {
+    background-color: #28a745; }
+  .container .koala-primary {
+    background-color: #007bff; }
+  .container .koala-danger {
+    background-color: #dc3545; }
+  .container .koala-golden {
+    background-color: #ffc107; }
+
+/*# sourceMappingURL=center-icon.css.map */

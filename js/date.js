@@ -242,37 +242,20 @@ let selectedDateEle = document.querySelector('.calendar-events .selected-date'),
     dataSet = {
       '06 / 07 / 2021': {
         event1: {
-          header: 'Test',
-          description: 'ggggggggg',
-          time: '9:00 am',
+          header: 'General Meeting',
+          description: 'Frontend & Backend',
+          time: '9:00 pm',
         },
         event2: {
-          header: 'Fatma',
-          description: 'ggggggggg',
-          time: '10:00 am',
-        },
-      },
-      '06 / 16 / 2021': {
-        event1: {
-          header: 'Fatma',
-          description: 'sssss',
-          time: '9:00 am',
-        },
-        event2: {
-          header: 'Fatma',
-          description: 'ggggggggg',
-          time: '10:00 am',
-        },
-        event3: {
-          header: 'Rehab',
-          description: 'sssss',
-          time: '11:00 am',
+          header: 'Frontend Meeting',
+          description: 'Discuss Statistics',
+          time: '7:00 pm',
         },
       },
       '06 / 23 / 2021': {
         event1: {
-          header: 'Rehab',
-          description: 'sssss',
+          header: 'Outing',
+          description: 'outing',
           time: '11:00 am',
         },
       }
